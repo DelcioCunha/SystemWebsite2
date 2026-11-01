@@ -10,7 +10,7 @@ window.SITE_CONFIG = {
   price_kz: 5000,          // preço da ativação (Kz), se o servidor não responder
   price_old_kz: 7500,      // preço normal riscado (0 = sem promoção)
   whatsapp: '244947976103', // número com indicativo (só é usado se o servidor não responder)
-  apk: 'https://github.com/DelcioCunha/SystemWebsite2/releases/tag/V.01',
+  apk: 'https://github.com/DelcioCunha/SystemWebsite2/releases/download/V.01/Sistema.apk',
   apk_version: '1.0',
   apk_size: '114 MB',
   min_android: 'Android 6 ou superior'
