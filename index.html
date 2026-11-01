@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sistema · O RPG da tua vida real</title>
+<meta name="description" content="Sistema é um RPG para Android em que a tua vida real é o jogo: cumpre missões do dia a dia, ganha XP, evolui o teu avatar e enfrenta mais de cem chefes. Criado em Angola.">
+<meta name="theme-color" content="#060A14">
+<meta property="og:title" content="Sistema · O RPG da tua vida real">
+<meta property="og:description" content="Sistema é um RPG para Android em que a tua vida real é o jogo: cumpre missões do dia a dia, ganha XP, evolui o teu avatar e enfrenta mais de cem chefes. Criado em Angola.">
+<meta property="og:image" content="img/og.png">
+<link rel="icon" href="img/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Oxanium:wght@500;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/site.css?v=1c6510a3">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Sistema"><img class="wm" src="img/logo-nome.webp" alt="Sistema"></a>
+    <nav class="nav" aria-label="Páginas"><a href="jogo.html">O jogo</a><a href="duelos.html">Duelos</a><a href="lojas.html">Lojas</a><a href="sistema-vivo.html">Sistema vivo</a><a href="parceiros.html">Parceiros</a><a href="comprar.html">Comprar</a></nav>
+    <a class="btn sm cta-top" href="comprar.html">Obter o Sistema</a>
+    <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <canvas class="field" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div>
+      <h1><span class="ln"><span>A tua vida real</span></span><span class="ln"><span>é o jogo.</span></span></h1>
+      <p class="lead">Sistema é um RPG para Android que só avança quando tu avanças. Escreves as tuas missões do dia a dia, cumpres-nas e ganhas XP. O teu avatar evolui, e com ele chegam mais de cem chefes para derrotar.</p>
+      <div class="syswin" id="syswin" role="region" aria-label="Mensagem do Sistema">
+        <span class="tag"><i></i>SISTEMA</span>
+        <p class="msg" id="sys-msg" aria-live="polite"></p>
+        <div class="act" id="sys-act" hidden>
+          <button class="btn yes" type="button" data-sys="yes">Aceitar</button>
+          <button class="btn" type="button" data-sys="no">Recusar</button>
+        </div>
+      </div>
+      <p class="hero-note"><span data-bind="price-line">Ativação por 5 000 Kz</span>, pagamento único por Multicaixa Express. Feito em Angola.</p>
+      <button type="button" class="btn gold hero-play" data-video="trailer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg> Ver o trailer <span class="muted">0:43</span></button>
+    </div>
+    <div class="phone" aria-label="Capturas do jogo">
+      <div class="shots">
+        <img class="on" src="img/app-status.webp" alt="Ecrã de estado: nível 46, Guerreiro, atributos e evolução">
+        <img src="img/app-missoes.webp" alt="Missão Diária e missões do dia">
+        <img src="img/app-combate.webp" alt="Os chefes da Fortaleza de Gelo">
+        <img src="img/app-batalha.webp" alt="Batalha por turnos contra Skadhi, Rainha do Inverno Eterno">
+        <img src="img/app-coliseu.webp" alt="O Coliseu dos Condenados">
+      </div>
+      <div class="dots" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap split trailer-split">
+    <button type="button" class="vcard big rv" data-video="trailer" aria-label="Ver o vídeo: Trailer de lançamento (0:43)"><span class="vc-media"><img src="video/trailer.webp" alt=""  width="540" height="960"><span class="vc-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg></span><span class="vc-dur">0:43</span><span class="vc-tag">Trailer</span></span></button>
+    <div>
+      <span class="eyebrow rv">Trailer de lançamento · V.01 «The System»</span>
+      <h2 class="rv">O Sistema escolheu-te</h2>
+      <p class="lead rv" style="margin-top:14px">Dez portões, cem chefes, o Coliseu dos Condenados e as sombras que lutam por ti. Tudo começa no nível 1, com a tua primeira missão real.</p>
+      <div class="btns rv" style="margin-top:24px"><button type="button" class="btn gold" data-video="trailer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg> Ver o trailer</button><a class="btn" href="#videos">Todos os vídeos</a></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2 class="rv">Cada dia cumprido torna-te mais forte</h2><p class="lead rv">Não há atalhos. O XP vem do que fazes fora do ecrã, e o Sistema regista tudo.</p></div>
+    <div class="steps" data-stagger>
+      <article class="step rv"><div class="shot"><img src="img/app-missoes.webp" alt="" loading="lazy"></div><h3>Escreve as tuas missões</h3><p>Ler, treinar, estudar, arrumar a casa. Escolhe a dificuldade e o prazo. Todos os dias há também uma Missão Diária de exercício.</p></article>
+      <article class="step rv"><div class="shot"><img src="img/app-status.webp" alt="" loading="lazy"></div><h3>Cumpre e ganha XP</h3><p>Cada missão cumprida dá XP, moedas e baús. Sobes de nível, distribuis pontos de atributo e o avatar muda de aparência a cada 3 níveis.</p></article>
+      <article class="step rv"><div class="shot"><img src="img/app-batalha.webp" alt="" loading="lazy"></div><h3>Enfrenta os chefes</h3><p>Combates por turnos contra os reis de 10 portões. Falhar a Diária tem castigo: o Sistema não perdoa quem desiste.</p></article>
+    </div>
+    <div class="vrow rv"><button type="button" class="vcard mini rv" data-video="como-funciona" aria-label="Ver o vídeo: Como funciona em 30 segundos (0:33)"><span class="vc-media"><img src="video/como-funciona.webp" alt="" loading="lazy" width="540" height="960"><span class="vc-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg></span><span class="vc-dur">0:33</span><span class="vc-tag">Começa aqui</span></span></button><div><span class="vr-k"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg> Vídeo · 0:33</span><h3>Como funciona em 30 segundos</h3><p>Os três passos, a jogar de verdade: uma missão escrita, cumprida e um chefe derrotado.</p><button type="button" class="btn sm" data-video="como-funciona">Ver o vídeo</button></div></div>
+  </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap split">
+    <div class="evo-stage rv">
+      <img id="evo-img" src="img/evo-m-1.webp" alt="Guerreiro no nível 1">
+      <div class="evo-lv"><span>1</span><small>Nível</small></div>
+    </div>
+    <div>
+      <h2 class="rv">Começas no nível 1. O resto, descobres a jogar</h2>
+      <p class="lead rv" style="margin-top:14px">O teu avatar muda de aparência a cada 3 níveis: 34 formas por classe, desenhadas à mão no estilo webtoon. Não mostramos nenhuma antes do tempo. Cada uma ganha-se.</p>
+      <div class="seg rv" role="group" aria-label="Aparência" style="margin-top:22px"><button type="button" data-g="m" aria-pressed="true">Masculina</button><button type="button" data-g="f" aria-pressed="false">Feminina</button></div>
+      <div class="locked rv" aria-label="Formas futuras escondidas">
+        <figure><div class="lk"><img src="img/evo-m-1.webp" alt=""></div><figcaption>Nível 10</figcaption></figure>
+        <figure><div class="lk"><img src="img/evo-m-1.webp" alt=""></div><figcaption>Nível 49</figcaption></figure>
+        <figure><div class="lk"><img src="img/evo-m-1.webp" alt=""></div><figcaption>Nível 100</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2 class="rv">Explora o Sistema</h2></div>
+    <div class="grid g2" data-stagger>
+      <a class="tile art rv" href="jogo.html"><img src="img/arena-ar10.webp" alt="" loading="lazy"><div class="body"><h3>O jogo</h3><p>Missões, 6 classes, 10 portões com 100 chefes, sombras que lutam por ti e um segredo no fim de tudo.</p><span class="go">Ver o jogo</span></div></a>
+      <a class="tile art rv" href="duelos.html"><img src="img/arena-ar1.webp" alt="" loading="lazy"><div class="body"><h3>Duelos online</h3><p>Desafia amigos para duelos por turnos decididos pelo servidor. Sobe nas patentes, do Ferro ao Monarca.</p><span class="go">Ver os duelos</span></div></a>
+      <a class="tile art rv" href="lojas.html"><img src="img/arena-ar5.webp" alt="" loading="lazy"><div class="body"><h3>Lojas</h3><p>A loja de moedas, a Loja Premium com equipamento soberano e relíquias, os Cristais e o Coliseu dos Condenados.</p><span class="go">Ver as lojas</span></div></a>
+      <a class="tile art rv" href="sistema-vivo.html"><img src="img/arena-final.webp" alt="" loading="lazy"><div class="body"><h3>O Sistema vivo</h3><p>Ele fala contigo, dá missões de emergência, castiga quem falha e repara quando tentas enganá-lo.</p><span class="go">Conhecer o Sistema</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section id="videos" class="videos-sec">
+  <div class="wrap">
+    <div class="sec-head"><h2 class="rv">Vê o Sistema em ação</h2><p class="lead rv">Vídeos curtos, gravados dentro do jogo. Toca para ver com som.</p></div>
+    <div class="vfilter rv" role="group" aria-label="Filtrar vídeos"><button type="button" data-vf="*" aria-pressed="true">Todos</button><button type="button" data-vf="Começa aqui|Trailer" aria-pressed="false">Para começar</button><button type="button" data-vf="O jogo" aria-pressed="false">O jogo</button><button type="button" data-vf="Duelos|Sistema vivo" aria-pressed="false">Duelos e Sistema</button><button type="button" data-vf="Desafio" aria-pressed="false">Desafios</button><button type="button" data-vf="Comprar" aria-pressed="false">Comprar</button></div>
+    <div class="vgrid" id="vgrid"><button type="button" class="vcard  rv" data-video="trailer" aria-label="Ver o vídeo: Trailer de lançamento (0:43)"><span class="vc-media"><img src="video/trailer.webp" alt="" loading="lazy" width="540" height="960"><span class="vc-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg></span><span class="vc-dur">0:43</span><span class="vc-tag">Trailer</span></span><span class="vc-cap"><b>Trailer de lançamento</b><small>V.01 «The System». O Sistema escolheu-te.</small></span></button><button type="button" class="vcard  rv" data-video="como-funciona" aria-label="Ver o vídeo: Como funciona em 30 segundos (0:33)"><span class="vc-media"><img src="video/como-funciona.webp" alt="" loading="lazy" width="540" height="960"><span class="vc-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg></span><span class="vc-dur">0:33</span><span class="vc-tag">Começa aqui</span></span><span class="vc-cap"><b>Como funciona em 30 segundos</b><small>Escreves a missão, cumpres, ganhas XP e enfrentas um chefe.</small></span></button><button type="button" class="vcard  rv" data-video="um-dia-com-o-sistema" aria-label="Ver o vídeo: Um dia com o Sistema (0:40)"><span class="vc-media"><img src="video/um-dia-com-o-sistema.webp" alt="" loading="lazy" width="540" height="960"><span class="vc-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg></span><span class="vc-dur">0:40</span><span class="vc-tag">O jogo</span></span><span class="vc-cap"><b>Um dia com o Sistema</b><small>Da missão diária da manhã ao relatório da meia-noite.</small></span></button><button type="button" class="vcard  rv" data-video="o-primeiro-chefe" aria-label="Ver o vídeo: O primeiro chefe (0:37)"><span class="vc-media"><img src="video/o-primeiro-chefe.webp" alt="" loading="lazy" width="540" height="960"><span class="vc-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg></span><span class="vc-dur">0:37</span><span class="vc-tag">O jogo</span></span><span class="vc-cap"><b>O primeiro chefe</b><small>Magia, mana a acabar, uma poção e a vitória.</small></span></button><button type="button" class="vcard  rv" data-video="sombras" aria-label="Ver o vídeo: Sombras (0:40)"><span class="vc-media"><img src="video/sombras.webp" alt="" loading="lazy" width="540" height="960"><span class="vc-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg></span><span class="vc-dur">0:40</span><span class="vc-tag">O jogo</span></span><span class="vc-cap"><b>Sombras</b><small>Extrais a sombra do chefe e ela passa a lutar por ti.</small></span></button><button type="button" class="vcard  rv" data-video="duelo-ao-vivo" aria-label="Ver o vídeo: Duelo ao vivo (0:39)"><span class="vc-media"><img src="video/duelo-ao-vivo.webp" alt="" loading="lazy" width="540" height="960"><span class="vc-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg></span><span class="vc-dur">0:39</span><span class="vc-tag">Duelos</span></span><span class="vc-cap"><b>Duelo ao vivo</b><small>Um duelo real entre dois jogadores, com provocações.</small></span></button><button type="button" class="vcard  rv" data-video="o-sistema-esta-a-ver" aria-label="Ver o vídeo: O Sistema está a ver (0:38)"><span class="vc-media"><img src="video/o-sistema-esta-a-ver.webp" alt="" loading="lazy" width="540" height="960"><span class="vc-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg></span><span class="vc-dur">0:38</span><span class="vc-tag">Sistema vivo</span></span><span class="vc-cap"><b>O Sistema está a ver</b><small>Vigilância, missões de emergência e Zona de Penalidade.</small></span></button><button type="button" class="vcard  rv" data-video="aceitas" aria-label="Ver o vídeo: Aceitas? (0:17)"><span class="vc-media"><img src="video/aceitas.webp" alt="" loading="lazy" width="540" height="960"><span class="vc-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg></span><span class="vc-dur">0:17</span><span class="vc-tag">Desafio</span></span><span class="vc-cap"><b>Aceitas?</b><small>Foste escolhido como Jogador. Recusar não é opção.</small></span></button><button type="button" class="vcard  rv" data-video="qual-e-o-teu-nivel" aria-label="Ver o vídeo: Qual seria o teu nível? (0:30)"><span class="vc-media"><img src="video/qual-e-o-teu-nivel.webp" alt="" loading="lazy" width="540" height="960"><span class="vc-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg></span><span class="vc-dur">0:30</span><span class="vc-tag">Desafio</span></span><span class="vc-cap"><b>Qual seria o teu nível?</b><small>Soma os pontos e diz o teu nível nos comentários.</small></span></button><button type="button" class="vcard  rv" data-video="como-comprar-a-ativacao" aria-label="Ver o vídeo: Como obter o Sistema (0:35)"><span class="vc-media"><img src="video/como-comprar-a-ativacao.webp" alt="" loading="lazy" width="540" height="960"><span class="vc-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg></span><span class="vc-dur">0:35</span><span class="vc-tag">Comprar</span></span><span class="vc-cap"><b>Como obter o Sistema</b><small>Os 4 passos: APK, WhatsApp, Multicaixa Express e código.</small></span></button></div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap split">
+    <div>
+      <h2 class="rv">O que te espera</h2>
+      <p class="lead rv" style="margin-top:14px">Um jogo completo, feito por uma só pessoa, em Angola.</p>
+    </div>
+    <div class="status rv">
+      <dl>
+        <dt>Chefes nos 10 portões</dt><dd data-count="100">100</dd>
+        <dt>Combates no Coliseu dos Condenados</dt><dd data-count="100">100</dd>
+        <dt>Aparências do avatar por classe</dt><dd data-count="34">34</dd>
+        <dt>Habilidades</dt><dd data-count="124">124</dd>
+        <dt>Itens</dt><dd data-count="462">462</dd>
+        <dt>Conversas do Sistema</dt><dd data-count="700">700</dd>
+        <dt data-legal-row hidden>Jogadores legalizados</dt><dd data-bind="legal" data-legal-row hidden>—</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="cta-band rv">
+      <div><h2>Pronto para seres escolhido?</h2><p>Descarrega o APK, compra o teu código de ativação e começa no nível 1.</p></div>
+      <div class="btns"><a class="btn wa" data-buy href="comprar.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.2-.3-.2-.5-.3Z"/></svg> Comprar o código</a><a class="btn" href="comprar.html">Ver como funciona</a></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap cols">
+    <div>
+      <a class="brand" href="index.html" style="font-size:18px"><img src="img/icon-192.png" alt="">Sistema</a>
+      <p style="margin-top:12px;max-width:40ch">Um RPG para Android em que a tua vida real é o jogo. Criado em Angola por Delcio Cunha. © 2026</p>
+    </div>
+    <div>
+      <h4>Páginas</h4>
+      <ul><li><a href="index.html">Início</a></li><li><a href="jogo.html">O jogo</a></li><li><a href="duelos.html">Duelos</a></li><li><a href="lojas.html">Lojas</a></li><li><a href="sistema-vivo.html">Sistema vivo</a></li><li><a href="parceiros.html">Parceiros</a></li><li><a href="comprar.html">Comprar</a></li><li><a href="index.html#videos">Vídeos</a></li></ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li><a data-buy href="comprar.html">WhatsApp</a></li>
+        <li><a href="https://www.instagram.com/delcio_369/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/delcio.cunha.2025/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://x.com/DelcioCunha369" target="_blank" rel="noopener">X</a></li>
+        <li><a href="https://delciocunha.github.io/Meu-Portfolio/" target="_blank" rel="noopener">Portfólio do criador</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<div class="mbar" id="mbar"><a class="btn wa" data-buy href="comprar.html">Comprar código</a><a class="btn" data-apk data-apk-short href="download/sistema.apk" download>Descarregar APK</a></div>
+<div class="vbox" id="vbox" role="dialog" aria-modal="true" aria-labelledby="vb-title" hidden>
+  <div class="vb-back" data-vclose></div>
+  <div class="vb-in">
+    <div class="vb-player"><video id="vb-video" controls playsinline preload="none"></video></div>
+    <div class="vb-side">
+      <span class="vb-tag" id="vb-tag"></span>
+      <h2 id="vb-title"></h2>
+      <p id="vb-desc"></p>
+      <div class="vb-nav"><button type="button" class="btn sm" data-vstep="-1" aria-label="Vídeo anterior">‹ Anterior</button><button type="button" class="btn sm" data-vstep="1" aria-label="Vídeo seguinte">Seguinte ›</button></div>
+      <a class="btn wa" data-buy href="comprar.html">Obter o Sistema</a>
+    </div>
+    <button type="button" class="vb-x" data-vclose aria-label="Fechar o vídeo">✕</button>
+  </div>
+</div>
+<script>window.SITE_VIDEOS=[{"id": "trailer", "t": "Trailer de lançamento", "d": "V.01 «The System». O Sistema escolheu-te.", "tag": "Trailer"}, {"id": "como-funciona", "t": "Como funciona em 30 segundos", "d": "Escreves a missão, cumpres, ganhas XP e enfrentas um chefe.", "tag": "Começa aqui"}, {"id": "um-dia-com-o-sistema", "t": "Um dia com o Sistema", "d": "Da missão diária da manhã ao relatório da meia-noite.", "tag": "O jogo"}, {"id": "o-primeiro-chefe", "t": "O primeiro chefe", "d": "Magia, mana a acabar, uma poção e a vitória.", "tag": "O jogo"}, {"id": "sombras", "t": "Sombras", "d": "Extrais a sombra do chefe e ela passa a lutar por ti.", "tag": "O jogo"}, {"id": "duelo-ao-vivo", "t": "Duelo ao vivo", "d": "Um duelo real entre dois jogadores, com provocações.", "tag": "Duelos"}, {"id": "o-sistema-esta-a-ver", "t": "O Sistema está a ver", "d": "Vigilância, missões de emergência e Zona de Penalidade.", "tag": "Sistema vivo"}, {"id": "aceitas", "t": "Aceitas?", "d": "Foste escolhido como Jogador. Recusar não é opção.", "tag": "Desafio"}, {"id": "qual-e-o-teu-nivel", "t": "Qual seria o teu nível?", "d": "Soma os pontos e diz o teu nível nos comentários.", "tag": "Desafio"}, {"id": "como-comprar-a-ativacao", "t": "Como obter o Sistema", "d": "Os 4 passos: APK, WhatsApp, Multicaixa Express e código.", "tag": "Comprar"}];</script>
+<script src="config.js?v=ecc495e4"></script>
+<script src="assets/site.js?v=e0b5bdeb"></script>
+</body>
+</html>

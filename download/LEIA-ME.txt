@@ -1,0 +1,12 @@
+O APK oficial (Sistema.apk, 114 MB) é grande demais para o repositório do GitHub (limite de 100 MB por ficheiro).
+Publica-o como Release, que aceita ficheiros até 2 GB:
+
+1. No GitHub, abre o repositório do site e carrega em «Releases» > «Create a new release».
+2. Em «Choose a tag» escreve v1.0 e carrega em «Create new tag».
+3. Título: Sistema 1.0. Arrasta o ficheiro Sistema.apk para a caixa «Attach binaries».
+4. Carrega em «Publish release».
+5. Na página do Release, clica com o botão direito em Sistema.apk > «Copiar endereço do link».
+6. Cola esse link em config.js, no campo apk (no lugar do link de exemplo), e envia o config.js para o repositório.
+
+Para uma versão nova: cria outro Release (v1.1, ...), troca o link em config.js e atualiza apk_version e apk_size.
+Não ponhas o APK dentro desta pasta: o GitHub recusa o envio.

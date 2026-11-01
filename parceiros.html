@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Parceiros · Sistema</title>
+<meta name="description" content="Programa de Parceiros do Sistema: traz novos jogadores e ganha de 20% a 50% de cada ativação, em 4 níveis.">
+<meta name="theme-color" content="#060A14">
+<meta property="og:title" content="Parceiros · Sistema">
+<meta property="og:description" content="Programa de Parceiros do Sistema: traz novos jogadores e ganha de 20% a 50% de cada ativação, em 4 níveis.">
+<meta property="og:image" content="img/og.png">
+<link rel="icon" href="img/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Oxanium:wght@500;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/site.css?v=1c6510a3">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Sistema"><img class="wm" src="img/logo-nome.webp" alt="Sistema"></a>
+    <nav class="nav" aria-label="Páginas"><a href="jogo.html">O jogo</a><a href="duelos.html">Duelos</a><a href="lojas.html">Lojas</a><a href="sistema-vivo.html">Sistema vivo</a><a href="parceiros.html" aria-current="page">Parceiros</a><a href="comprar.html">Comprar</a></nav>
+    <a class="btn sm cta-top" href="comprar.html">Obter o Sistema</a>
+    <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main>
+<section class="page-head">
+  <canvas class="field" aria-hidden="true"></canvas><div class="scan" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="crumb"><img src="img/ui-h-key.webp" alt="">Parceiros</div>
+    <h1>Torna-te Parceiro do Sistema</h1>
+    <p class="lead">Traz novos jogadores para o Sistema e ganha dinheiro por cada um que ativar o jogo. Quanto mais trazes, maior é a tua comissão: até 50% de cada ativação. E com o primeiro utilizador, o teu código de ativação é oferta.</p>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow rv">Níveis de parceria</span><h2 class="rv">Sobe de nível como um Caçador</h2>
+      <p class="lead rv">A comissão é uma percentagem do preço da ativação (<b data-bind="price">5 000 Kz</b>), paga por cada <b>novo utilizador</b> que trazes e que ativa o jogo com um código oficial.</p></div>
+    <div class="pbonus rv"><span class="pb-ic" aria-hidden="true"><img src="img/ui-h-key.webp" alt=""></span><div><span class="eyebrow">Prémio do primeiro utilizador</span><h3>Traz o teu 1.º utilizador e o Sistema é teu</h3><p>Além da comissão, ganhas o teu próprio <b>código de ativação</b>, sem pagar (vale <b data-bind="price">5 000 Kz</b>). Passas a usar o Sistema como <b>Jogador legalizado</b>: para mostrares o jogo por dentro a quem quiseres convencer e para evoluíres também, como qualquer jogador.</p></div></div>
+    <div class="ptiers" data-stagger><div class="ptier rv" style="--tc:#6FD6FF">
+  <span class="pt-lv">NÍVEL 1</span>
+  <h3>Recrutador</h3>
+  <div class="pt-pct"><b>20%</b><span>de cada ativação</span></div>
+  <div class="pt-kz"><b data-pct="20">1 000 Kz</b> por novo utilizador</div>
+  <p>Comissão padrão, desde o primeiro utilizador. Com o 1.º utilizador ganhas também o teu código de ativação.</p>
+  <div class="pt-from">Do 1.º ao 10.º utilizador</div>
+</div><div class="ptier rv" style="--tc:#6FF0B0">
+  <span class="pt-lv">NÍVEL 2</span>
+  <h3>Batedor</h3>
+  <div class="pt-pct"><b>30%</b><span>de cada ativação</span></div>
+  <div class="pt-kz"><b data-pct="30">1 500 Kz</b> por novo utilizador</div>
+  <p>Depois de trazeres 10 novos utilizadores.</p>
+  <div class="pt-from">A partir do 11.º utilizador</div>
+</div><div class="ptier rv" style="--tc:#8B6BFF">
+  <span class="pt-lv">NÍVEL 3</span>
+  <h3>Comandante</h3>
+  <div class="pt-pct"><b>40%</b><span>de cada ativação</span></div>
+  <div class="pt-kz"><b data-pct="40">2 000 Kz</b> por novo utilizador</div>
+  <p>Depois de trazeres 25 novos utilizadores.</p>
+  <div class="pt-from">A partir do 26.º utilizador</div>
+</div><div class="ptier rv max" style="--tc:#F2B95D">
+  <span class="pt-lv">NÍVEL 4 · MÁXIMO</span>
+  <h3>Monarca</h3>
+  <div class="pt-pct"><b>50%</b><span>de cada ativação</span></div>
+  <div class="pt-kz"><b data-pct="50">2 500 Kz</b> por novo utilizador</div>
+  <p>O nível máximo: depois de trazeres 35 novos utilizadores.</p>
+  <div class="pt-from">A partir do 36.º utilizador</div>
+</div></div>
+    <p class="muted rv" style="margin-top:20px">Os valores em Kz são calculados sobre o preço atual da ativação. Ao subires de nível, a nova comissão vale para os utilizadores seguintes; os que já trouxeste ficam pagos ao valor do nível em que estavas.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap split" style="align-items:start">
+    <div>
+      <span class="eyebrow rv">Simulador</span>
+      <h2 class="rv">Quanto podes ganhar?</h2>
+      <p class="lead rv" style="margin-top:14px">Escolhe quantos novos utilizadores trazes e vê o teu nível e o total das comissões.</p>
+    </div>
+    <div class="pcalc rv" id="pcalc">
+      <label for="pc-n">Novos utilizadores trazidos: <b id="pc-nv">10</b></label>
+      <input type="range" id="pc-n" min="1" max="60" value="10">
+      <div class="pc-out">
+        <div><span>O teu nível</span><b id="pc-lv">Batedor · 30%</b></div>
+        <div><span>O próximo utilizador vale</span><b id="pc-each">1 500 Kz</b></div>
+        <div class="tot"><span>Total das comissões</span><b id="pc-tot">10 000 Kz</b></div>
+      </div>
+      <p class="fine" id="pc-next">Faltam 15 utilizadores para o nível Comandante (40%).</p>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow rv">Como funciona</span><h2 class="rv">Quatro passos</h2></div>
+    <ol class="flow" data-stagger>
+      <li class="rv"><div><h3>Pede para ser parceiro</h3><p>Fala connosco no WhatsApp. Diz o teu nome e onde vais divulgar o Sistema: TikTok, Facebook, grupos, escola, ginásio…</p></div></li>
+      <li class="rv"><div><h3>Recebes o teu código de parceiro</h3><p>É a tua identificação no programa. Partilha-o, com o link do site, com quem quiser jogar.</p></div></li>
+      <li class="rv"><div><h3>Os teus utilizadores ativam o jogo</h3><p>Na mensagem de compra no WhatsApp, indicam o teu código de parceiro. Cada ativação paga e confirmada conta para ti. Com o primeiro, recebes também o teu código de ativação para jogares como Jogador legalizado.</p></div></li>
+      <li class="rv"><div><h3>Recebes a tua comissão</h3><p>Por Multicaixa Express, ao valor do teu nível. Podes perguntar no WhatsApp quantos utilizadores já trouxeste.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="cta-band rv">
+      <div><h2>Queres ser parceiro?</h2><p>Envia-nos uma mensagem e começa a ganhar com cada novo Jogador que trazes para o Sistema.</p></div>
+      <div class="btns"><a class="btn wa" data-partner href="#perguntas"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.2-.3-.2-.5-.3Z"/></svg> Quero ser parceiro</a><a class="btn" href="comprar.html">Ver o preço da ativação</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="perguntas">
+  <div class="wrap">
+    <div class="sec-head"><h2 class="rv">Perguntas</h2></div>
+    <div class="faq rv">
+      <details><summary>Quem conta como novo utilizador?</summary><p>Uma pessoa que ainda não tinha o Sistema e que ativa o jogo com um código de ativação pago, indicando o teu código de parceiro. Restaurar uma conta, mudar de telemóvel ou ativar os teus próprios aparelhos não conta.</p></details>
+      <details><summary>O parceiro também pode jogar?</summary><p>Sim. Quando o teu primeiro utilizador ativar o jogo, recebes o teu próprio código de ativação, sem pagar. Ativas o Sistema no teu aparelho e ficas como Jogador legalizado: podes mostrar o jogo a quem quiseres convencer e evoluir como qualquer jogador. Se já tiveres o Sistema ativado, fala connosco.</p></details>
+      <details><summary>Como sobe o meu nível?</summary><p>Automaticamente: com 10 novos utilizadores trazidos passas a Batedor (30%), com 25 a Comandante (40%) e com 35 a Monarca (50%). Monarca é o nível máximo.</p></details>
+      <details><summary>Quanto ganho por cada utilizador?</summary><p>Uma percentagem do preço da ativação: 20%, 30%, 40% ou 50%, conforme o teu nível. Com a ativação a 5 000 Kz, são 1 000, 1 500, 2 000 ou 2 500 Kz por utilizador.</p></details>
+      <details><summary>Como recebo?</summary><p>Por Multicaixa Express. Nunca te pedimos o PIN nem códigos do banco.</p></details>
+      <details><summary>Posso perder a parceria?</summary><p>Sim, se divulgares cópias não oficiais do APK, venderes ou partilhares códigos de ativação, ou fizeres promessas falsas sobre o jogo. Os utilizadores trazidos dessa forma não contam e os aparelhos envolvidos podem ser bloqueados.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap cols">
+    <div>
+      <a class="brand" href="index.html" style="font-size:18px"><img src="img/icon-192.png" alt="">Sistema</a>
+      <p style="margin-top:12px;max-width:40ch">Um RPG para Android em que a tua vida real é o jogo. Criado em Angola por Delcio Cunha. © 2026</p>
+    </div>
+    <div>
+      <h4>Páginas</h4>
+      <ul><li><a href="index.html">Início</a></li><li><a href="jogo.html">O jogo</a></li><li><a href="duelos.html">Duelos</a></li><li><a href="lojas.html">Lojas</a></li><li><a href="sistema-vivo.html">Sistema vivo</a></li><li><a href="parceiros.html">Parceiros</a></li><li><a href="comprar.html">Comprar</a></li><li><a href="index.html#videos">Vídeos</a></li></ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li><a data-buy href="comprar.html">WhatsApp</a></li>
+        <li><a href="https://www.instagram.com/delcio_369/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/delcio.cunha.2025/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://x.com/DelcioCunha369" target="_blank" rel="noopener">X</a></li>
+        <li><a href="https://delciocunha.github.io/Meu-Portfolio/" target="_blank" rel="noopener">Portfólio do criador</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<div class="mbar" id="mbar"><a class="btn wa" data-buy href="comprar.html">Comprar código</a><a class="btn" data-apk data-apk-short href="download/sistema.apk" download>Descarregar APK</a></div>
+<div class="vbox" id="vbox" role="dialog" aria-modal="true" aria-labelledby="vb-title" hidden>
+  <div class="vb-back" data-vclose></div>
+  <div class="vb-in">
+    <div class="vb-player"><video id="vb-video" controls playsinline preload="none"></video></div>
+    <div class="vb-side">
+      <span class="vb-tag" id="vb-tag"></span>
+      <h2 id="vb-title"></h2>
+      <p id="vb-desc"></p>
+      <div class="vb-nav"><button type="button" class="btn sm" data-vstep="-1" aria-label="Vídeo anterior">‹ Anterior</button><button type="button" class="btn sm" data-vstep="1" aria-label="Vídeo seguinte">Seguinte ›</button></div>
+      <a class="btn wa" data-buy href="comprar.html">Obter o Sistema</a>
+    </div>
+    <button type="button" class="vb-x" data-vclose aria-label="Fechar o vídeo">✕</button>
+  </div>
+</div>
+<script>window.SITE_VIDEOS=[{"id": "trailer", "t": "Trailer de lançamento", "d": "V.01 «The System». O Sistema escolheu-te.", "tag": "Trailer"}, {"id": "como-funciona", "t": "Como funciona em 30 segundos", "d": "Escreves a missão, cumpres, ganhas XP e enfrentas um chefe.", "tag": "Começa aqui"}, {"id": "um-dia-com-o-sistema", "t": "Um dia com o Sistema", "d": "Da missão diária da manhã ao relatório da meia-noite.", "tag": "O jogo"}, {"id": "o-primeiro-chefe", "t": "O primeiro chefe", "d": "Magia, mana a acabar, uma poção e a vitória.", "tag": "O jogo"}, {"id": "sombras", "t": "Sombras", "d": "Extrais a sombra do chefe e ela passa a lutar por ti.", "tag": "O jogo"}, {"id": "duelo-ao-vivo", "t": "Duelo ao vivo", "d": "Um duelo real entre dois jogadores, com provocações.", "tag": "Duelos"}, {"id": "o-sistema-esta-a-ver", "t": "O Sistema está a ver", "d": "Vigilância, missões de emergência e Zona de Penalidade.", "tag": "Sistema vivo"}, {"id": "aceitas", "t": "Aceitas?", "d": "Foste escolhido como Jogador. Recusar não é opção.", "tag": "Desafio"}, {"id": "qual-e-o-teu-nivel", "t": "Qual seria o teu nível?", "d": "Soma os pontos e diz o teu nível nos comentários.", "tag": "Desafio"}, {"id": "como-comprar-a-ativacao", "t": "Como obter o Sistema", "d": "Os 4 passos: APK, WhatsApp, Multicaixa Express e código.", "tag": "Comprar"}];</script>
+<script src="config.js?v=ecc495e4"></script>
+<script src="assets/site.js?v=e0b5bdeb"></script>
+</body>
+</html>
